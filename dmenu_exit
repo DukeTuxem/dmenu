@@ -1,0 +1,9 @@
+#!/bin/sh
+
+ANSWER=$(printf "No\nYes" | dmenu "$@" -p "Exit dwm ?")
+
+if [ "$ANSWER" = "Yes" ]; then
+    pkill xinit &
+fi
+
+# vim: syn=sh
