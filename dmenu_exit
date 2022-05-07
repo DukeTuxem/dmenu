@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ANSWER=$(printf "No\nYes" | dmenu "$@" -p "Exit dwm ?")
+ANSWER=$(printf "No\nYes" | dmenu "$@" -x -p "Exit dwm ?")
 
 if [ "$ANSWER" = "Yes" ]; then
     pkill xinit &
