@@ -677,7 +677,7 @@ setup(void)
 		mw = wa.width;
 	}
 	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
-	inputw = mw / 10; /* input width: 1/10th of monitor width */
+	inputw = inputfield ? mw / 8 : 0;
 	match();
 
 	/* create menu window */
